@@ -1,0 +1,15 @@
+.switcher__wrap {
+    padding: 0 12px;
+    align-items: center;
+    display: flex;
+}
+
+.header__list {
+    width: 250px;
+}
+
+.header__root {
+    padding: 2px 4px;
+    display: flex;
+    align-items: center;
+}

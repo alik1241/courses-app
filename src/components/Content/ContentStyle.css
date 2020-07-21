@@ -1,0 +1,33 @@
+.content__container {
+    margin: 0 auto;
+    margin-top: 30px;
+    max-width: 1000px;
+    min-height: calc(100vh - 317px);
+}
+
+.card__progress-wrap {
+    width: 250px;
+    height: 20px;
+}
+
+.card__progress {
+    background: #ddd !important;
+}
+
+.card__progress div {
+    background: #3fb4fb;
+}
+
+.content__root {
+    flex-grow: 1;
+}
+
+.content__card-item-root {
+    minHeight: 260px;
+    width: 170px;
+    margin: 0 15px 55px;
+}
+
+.content__card-media {
+    height: 140px,
+}
