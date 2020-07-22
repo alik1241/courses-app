@@ -6,6 +6,7 @@ import Footer from "./components/Footer/Footer";
 import Filter from "./components/Filters/Filter";
 import axios from 'axios';
 import { AppContext } from './services/AppContext';
+import localData from "./data.json";
 
 function App() {
     const [data, setData] = useState({});
@@ -15,13 +16,15 @@ function App() {
 
     useEffect(() => {
         const loadData = async () => {
-            const request = {"data":""};
-            const result = await axios.post(
-                'http://krapipl.imumk.ru:8082/api/mobilev1/update',
-                {request}
-            );
+            // const request = {"data":""};
+            // const result = await axios.post(
+            //     'http://krapipl.imumk.ru:8082/api/mobilev1/update',
+            //     {request}
+            // );
 
-            setData(result.data);
+            // setData(result.data);
+
+            setData(localData); // на гитхабе не работает запрос к хттп АПИ из-за протокола хттпс
             setLoad(false);
         };
 
