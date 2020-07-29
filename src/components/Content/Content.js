@@ -10,7 +10,7 @@ const filtrator = (card, filter) => {
         let condition = true;
 
         if (filter.grade) {
-            condition = condition && filter.grade === card.grade;
+            condition = condition && card.grade.split(';').indexOf(filter.grade) !== -1;
         }
 
         if (filter.genre) {
